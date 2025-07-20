@@ -1,0 +1,84 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3f5c;
+            padding: 20px;
+        }
+
+        .space {
+            font-size: 24px;
+            color: darkblue;
+            animation: fadeInText 4s ease-in-out infinite alternate;
+        }
+
+        h1, h3, p, li, label {
+            animation: slideIn 1s ease-out;
+        }
+
+        h1 {
+            color: darkgreen;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, button {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 200px;
+        }
+
+        button {
+            background-color: steelblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    #contactBtn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contactBtn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
